@@ -1,4 +1,4 @@
-package com.triplex.backend;
+package com.presupuesto.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
