@@ -14,5 +14,5 @@ public interface GastosIngresosService {
 
     GastosIngresos create(GastosIngresos obj);
 
-    void delete(Long id);
+    List<GastosIngresos> delete(Long id, Long idPresupuesto);
 }

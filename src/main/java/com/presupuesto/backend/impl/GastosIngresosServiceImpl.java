@@ -35,8 +35,9 @@ public class GastosIngresosServiceImpl implements GastosIngresosService {
     }
 
     @Override
-    public void delete(Long id) {
+    public List<GastosIngresos> delete(Long id, Long idPresupuesto) {
         GastosIngresos obj = repository.getGastosIngresosById(id);
         repository.delete(obj);
+        return getByIdPresupuesto(idPresupuesto);
     }
 }

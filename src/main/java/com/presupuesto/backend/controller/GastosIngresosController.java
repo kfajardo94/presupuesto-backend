@@ -59,8 +59,9 @@ public class GastosIngresosController {
         return obj;
     }
 
-    @DeleteMapping("deleteById")
-    public void delete(@RequestParam Long id){
-        service.delete(id);
+    @GetMapping("deleteById")
+    @ResponseBody
+    public List<GastosIngresos> delete(@RequestParam Long id, @RequestParam Long idPresupuesto){
+        return service.delete(id, idPresupuesto);
     }
 }
